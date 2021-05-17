@@ -1,0 +1,452 @@
+body * {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: auto;
+    width: 90%;
+}
+
+/* -----------------------------------------------------------*/ 
+
+    /* HEADER PART */
+
+header {
+    margin: 1em 0;
+    position: relative;
+}
+
+header span {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav {
+    position: initial;
+}
+
+.social {
+    display: block;
+    text-align: center;
+}
+
+#phone-number, .social {
+    margin: auto;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0.4em 0;
+    justify-content: center;
+}
+
+#title1 {
+    color:green;
+    font-size: 3.5em;
+
+    margin: 0;
+}
+
+.social img {
+    width: auto;
+    height: 1.8em;
+}
+
+    /* BREAKPOINT FOR HEADER PART */ 
+
+@media only screen and (max-width: 770px) {
+    
+    header nav {
+        display: inline;
+        margin: 0;
+        position: absolute;
+    }
+
+    #title1 {
+        font-size: 1.9em;
+    }
+    
+    #phone-number {
+        margin: auto;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    .social {
+        display: block;
+        text-align: center;
+    }
+
+    .social img {
+        width: auto;
+        height: 1.2em;
+        margin: 0 0.1em;
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    #title1 {
+        font-size: 1.5em;
+    }
+
+    #phone-number {
+        margin: auto;
+        font-size: 0.5em;
+    }
+
+    .social img {
+        display: none;
+    }
+}
+
+
+/* -----------------------------------------------------------*/ 
+
+        /* MAIN IMAGE */
+
+    /* BREAKPOINTS FOR THE MAIN IMAGE */    
+
+@media only screen and (max-width: 702px) {
+    #main-image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 702px) {
+    #main-image {
+        display: none;
+    }
+}
+
+
+/* -----------------------------------------------------------*/ 
+
+        /* SLIDER */
+
+#slider .slide {
+    display: none;
+}
+
+body #slider #first-picture {
+    display: inline;
+}
+
+#slider .slide img {
+    vertical-align: middle;
+}
+
+#slider {
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+#slider .switch {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    width: auto;
+    padding: 0.5em;
+
+    color: white;
+    font-size: 6em;
+}
+
+#slider #next {
+    right: 0;
+}
+
+#slider #prev {
+    left: 0;
+}
+
+#slider img {
+    width: 100%;
+}
+
+    /* BREAKPOINTS FOR THE SLIDER */
+
+@media only screen and (max-width: 702px) {
+    #slider {
+        display: none;
+    }
+}
+
+
+/* -----------------------------------------------------------*/ 
+
+        /* ABOUT US */
+
+#section1 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#section1 span{
+    margin: 2em 0;
+    max-width: 24em;
+}
+
+#section1 img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+#section1 span img {
+    width: auto;
+    height: 7em;
+    margin: 1em auto;
+}
+
+#section1 #section1_header {
+    color: green;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#section1 #section1_header2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+#section1 #section1_text {
+    text-align: justify;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+}
+
+#section1 img {
+    margin: 2em 0;
+    max-width: 24em;
+}
+
+#section1 #sec1 {
+    width: 25em;
+    height: 35em;
+}
+
+    /* BREAKPOINT FOR SECTION "ABOUT US" */
+
+@media only screen and (min-width: 900px) {
+    #section1 span, #section1 img {
+        margin: 4em 0;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #section1 #sec1 {
+        display: inline;
+        width: 30em;
+        height: 35em;
+    }
+}
+
+
+/* -----------------------------------------------------------*/ 
+
+        /* LATEST RECIPES */
+
+#recipes {
+    position: relative;
+}
+
+#recipes #title-recipe {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: green;
+    display: inline;
+    margin: 0;
+}
+
+#recipes span {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#recipes span img {
+    max-width: 90%;
+    height: 32em;
+    width: 23em;
+    margin: 0.3em 0.3em;
+}
+
+    /* BREAKPOINTS FOR THE LATEST RECIPES */
+
+@media only screen and (max-width: 700px) {
+    #recipes div {
+        justify-content: start;
+    }
+}
+
+
+/* -----------------------------------------------------------*/ 
+
+        /* SOME COMMENTS */
+
+#comment-section {
+    margin: 3em 0;
+    padding: 2em 0;
+
+    border: grey solid 0.1em;
+}
+
+#comment-section #border {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#comment-section #title-comment {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: green;
+
+    display: block;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    margin-top: 0;
+}
+
+#comment-section #border article {
+    max-width: 90%;
+    max-height: 70%;
+    margin: 1em;
+    position: relative;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+#comment-section #border img {
+    width: 4.5em;
+    height: auto;
+    border-radius: 45%;
+    top: -4em;
+    position: absolute;
+}
+
+#comment-section .text-comment {
+    margin-top: 4em;
+    font-size: 0.7em;
+    text-align: justify;
+}
+
+
+    /* BREAKPOINTS FOR THE COMMENT PART */
+
+@media only screen and (min-width: 1100px) {
+    #comment-section #border
+ article {
+        max-width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #comment-section {
+        max-width: 85%;
+        margin: 3em auto;
+    }
+}
+
+
+/* -----------------------------------------------------------*/ 
+
+        /* WHAT'S NEW ? */
+
+#updates {
+    margin: 5em 0;
+    position: relative;
+}
+
+#updates div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#updates div article {
+    width: 20em;
+    height: 19.6em;
+    margin: 1em;
+    margin-top: 2em;
+}
+
+#updates div article img {
+    width: 20em;
+    height: auto;
+    max-width: 100%;
+}
+
+#updates span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#updates #updates-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    display: inline;
+    margin: 0;
+    color: green;
+}
+
+#updates #text1 {
+    font-size: 1.3em;
+    position: absolute;
+    top: 2em;
+    left: 0.6em;
+}
+
+#updates #text2 {
+    font-size: 0.8em;
+    position: absolute;
+    top: 10em;
+    left: 1em;
+    max-width: 90%;
+    text-align: justify;
+}
+
+#updates #tasty-text {
+    border: 0.1em green solid;
+    position: relative;
+}
+
+    /* BREAKPOINTS FOR THE UPDATES PART */
+    
+@media only screen and (max-width: 400px) {
+    #updates span {
+        justify-content: start;
+    }
+}
+
+/* -----------------------------------------------------------*/ 
+
+        /* FOOTER */
+
+        footer .social {
+            margin: 1em;
+        }
+        
+            /* BREAKPOINTS FOR THE FOOTER */
+        @media only screen and (max-width: 900px) {
+            footer {
+                position: relative;
+            }
+            footer .social {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        
+        @media only screen and (min-width: 900px) {
+            footer {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
